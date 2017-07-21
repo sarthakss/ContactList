@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Contact Details</h3>
+<br>
+ <a href="#!/contacts/updatecontact/{{contactDetailVm.contact.id}}" class = "glyphicon glyphicon-pencil"></a>
+   
+  </div>
+  <div class="panel-body">
+<p>ID: {{contactDetailVm.contact.id}}</p>
+<p>FIRSTNAME: {{contactDetailVm.contact.firstName}}</p>
+<p>LASTNAME: {{contactDetailVm.contact.lastName}}</p>
+<p>EMAIL: {{contactDetailVm.contact.email}}</p>
+<br>
+<br>
+<a ng-click="removeContact(contact)" class="button">Remove</a>
+
+  </div>
+</div>

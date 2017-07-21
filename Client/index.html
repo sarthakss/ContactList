@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="addressbook">
+
+  <head>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <h1>My Contact List</h1>
+      <ul class="nav nav-tabs">
+    <li><a href="#!/home">Home</a></li>
+    <li><a href="#!/contacts">Contacts</a></li>
+    <li><a href="#!/add-contact" class="glyphicon glyphicon-plus"></a></li>
+    <li><a href="#!/aboutus">About Us</a></li>
+  </ul>
+  
+   <div ng-view>
+
+  </div>
+
+
+  <script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+  <script src="module.js"></script>
+  <script src="service.js"></script>
+  <script src="add-contact/add-contact.controller.js"></script>
+  <script src="contact-list/contact-list.controller.js"></script>
+  <script src="contact-detail/contact-detail.controller.js"></script>
+  <script src="update-contact/update-contact.controller.js"></script>
+  
+  </body>
+
+</html>

@@ -1,0 +1,19 @@
+/* Styles go here */
+
+h1{
+ text-align:center; 
+}
+
+img{
+  display: block;
+    margin: auto;
+    width: 20%;
+}
+
+.table {
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+}
+

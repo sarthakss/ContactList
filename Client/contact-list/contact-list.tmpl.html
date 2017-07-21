@@ -1,0 +1,15 @@
+<br>
+<input type="text" placeholder="Search Contact"  ng-model="contactListVm.searchText">
+<br>
+<table class="table table-striped col-sm-8">
+  <thead>
+    <tr>
+      <th ng-click="contactListVm.sorter.sortBy='firstName'; contactListVm.sorter.sortOrder = !contactListVm.sorter.sortOrder;">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="contact in contactListVm.contacts | filter: contactListVm.searchText | orderBy:contactListVm.sorter.sortBy:contactListVm.sorter.sortOrder">
+      <td><a ng-href="#!/contacts/{{contact.id}}">{{contact.firstName}} {{contact.lastName}}</a></td>
+    </tr>
+  </tbody>
+</table>
